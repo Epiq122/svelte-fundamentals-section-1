@@ -3,57 +3,48 @@
 		title: string;
 		description: string;
 		path: string;
-		emoji: string;
 	}
 
 	const demos: Demo[] = [
 		{
 			title: 'Pure Functions',
 			description: 'Learn about pure functions and side effects',
-			path: '/pure-functions',
-			emoji: '🔬'
+			path: '/pure-functions'
 		},
 		{
 			title: 'Microtask Queue',
 			description: 'Understanding JavaScript event loop and microtasks',
-			path: '/microtask-queue',
-			emoji: '⚡'
+			path: '/microtask-queue'
 		},
 		{
 			title: 'Profile Card',
 			description: 'Reactive state management with user profiles',
-			path: '/profile-demo',
-			emoji: '👤'
+			path: '/profile-demo'
 		},
 		{
 			title: 'Shopping Cart',
 			description: 'Building a reactive shopping cart',
-			path: '/shopping-cart',
-			emoji: '🛒'
+			path: '/shopping-cart'
 		},
 		{
 			title: 'Signal-Based Reactivity',
 			description: 'Understanding $state and $derived',
-			path: '/signals-demo',
-			emoji: '📡'
+			path: '/signals-demo'
 		},
 		{
 			title: 'Derived State',
 			description: 'Computed values with $derived',
-			path: '/derived-demo',
-			emoji: '🧮'
+			path: '/derived-demo'
 		},
 		{
 			title: 'Effects',
 			description: 'Side effects with $effect',
-			path: '/effects-demo',
-			emoji: '💫'
+			path: '/effects-demo'
 		},
 		{
 			title: 'Counter Component',
 			description: 'Complete reactive counter example',
-			path: '/counter',
-			emoji: '🔢'
+			path: '/counter'
 		}
 	];
 </script>
@@ -71,7 +62,7 @@
 					href={demo.path}
 					class="block rounded-xl border-2 border-gray-700 bg-gray-800 p-6 transition-all duration-300 hover:-translate-y-2 hover:border-blue-400 hover:shadow-[0_12px_40px_rgba(0,0,0,0.5)]"
 				>
-					<div class="mb-4 text-5xl">{demo.emoji}</div>
+					<!-- <div class="mb-4 text-5xl">{demo.emoji}</div> -->
 					<h2 class="mb-3 text-2xl font-bold text-white">{demo.title}</h2>
 					<p class="leading-relaxed text-gray-400">{demo.description}</p>
 				</a>
